@@ -1,0 +1,72 @@
+body {
+  margin: 30px 10% auto 10%;
+  background-image: url('../img/dark_geometric.png');
+  text-shadow: #666 0.1em 0.1em 0.2em;
+}
+div.hero-unit {
+  background-image: url('../img/cross_scratches.png');
+  position: relative;
+  height: 550px;
+}
+h1 {
+  font-family: 'Great Vibes';
+  font-size: 96px !important;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+h2 {
+  font-family: 'Bitter';
+  font-size: 24px;
+  text-align: center;
+}
+.tweet {
+  font-family: 'Glegoo';
+  position: absolute;
+}
+div#comparison {
+  position: relative;
+  margin: 30px auto auto auto;
+  width: 75%;
+  height: 180px;
+}
+div#tweet-left {
+  top: 0;
+  left: 0;
+  width: 250px;
+}
+div#tweet-right {
+  top: 0;
+  right: 0;
+  width: 250px;
+}
+div#buttons {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+div#button-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div#button-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+div#github {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+div#result {
+  display: none;
+}
+div#score {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 10%;
+  font-family: 'Bitter';
+  font-size: 20px;
+}
