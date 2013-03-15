@@ -9,10 +9,13 @@ var chain = {}, hashtags = new Array();
 var tweet_data = new Array();
 
 // Initialize the Markov chain.
-function initChain() {
+function initChain(username) {
   // Need the 'callback=?' part to force a JSONP call.
   var url = 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?'
     + '&screen_name=' + username;
+
+  chain = {};
+  hashtags = new Array();
 
   // Read tweets from Twitter.
   $.ajax({
@@ -22,6 +25,11 @@ function initChain() {
     success: function(data) {
       tweet_data = data.map(function (x) { return x.text });
       buildChain(tweet_data);
+    },
+    error: function() {
+      $('#result .text').text("Tweet data could not be loaded.");
+      $('#result').attr("class", "alert alert-failure");
+      $('#result').css("display", "block");
     }
   });
 
@@ -131,4 +139,4 @@ function guess(side) {
   populateTweets();
 }
 
-initChain();
+initChain("bkcmath");

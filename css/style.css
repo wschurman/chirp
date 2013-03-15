@@ -70,3 +70,14 @@ div#score {
   font-family: 'Bitter';
   font-size: 20px;
 }
+div#userform {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  float: right;
+}
+input {
+  font-family: 'Bitter';
+  margin-right: 10px;
+  margin-top: 3px;
+}

@@ -9,9 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    var username = "bkcmath";
-  </script>
   <script src="js/chirp.js"></script>
   <script src="js/misc.js"></script>
 </head>
@@ -42,6 +39,10 @@
       </div>
     </div>
     <div id="score">Score: 0/0</div>
+    <div id="userform">
+      <input type="text" id="txtusername" placeholder="Username" />
+      <button class="btn btn-success" onclick="javascript:changeUser()">Switch</button>
+    </div>
   </div>
 </body>
 </html>
