@@ -81,7 +81,10 @@ function generateTweet() {
 
   get_rand_key(chain);
 
-  for (var i = 0; i < max_words; i++) {
+  // random between 2 and max_words
+  var rand_max = Math.floor((Math.random() * (max_words - 2)) + 2);
+
+  for (var i = 0; i < rand_max; i++) {
     var curr_chain = chain[w1 + "^" + w2];
     if (curr_chain === undefined) {
       get_rand_key(chain);
@@ -94,7 +97,7 @@ function generateTweet() {
   }
 
   // Add random hashtags at the end.
-  for (var i = 0; i <= Math.floor(Math.random() * 3) + 1; i++) {
+  for (var i = 0; i <= Math.floor(Math.random() * 2) + 1; i++) {
     sentence += hashtags[Math.floor(Math.random() * hashtags.length)] + " ";
   }
 
