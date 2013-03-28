@@ -98,7 +98,7 @@ function generateTweet() {
 
   // Add random hashtags at the end.
   for (var i = 0; i <= Math.floor(Math.random() * 2) + 1; i++) {
-    sentence += hashtags[Math.floor(Math.random() * hashtags.length)] + " ";
+    sentence += " " + hashtags[Math.floor(Math.random() * hashtags.length)];
   }
 
   return sentence;
